@@ -6,8 +6,15 @@
     box-sizing: border-box;
 }
 
-container {
+body {
+    font-family: 'Fredoka', sans-serif;
+}
+
+.container {
     margin: auto;
+    max-width: 1200px;
+    text-align: center;
+
 }
 
 :root {
@@ -15,4 +22,15 @@ container {
     --cards-text-color: #ffffff;
     --title-color: #e53170;
     --mail-link-color: #65c6e5;
+    --title-paddings-vertical: 50px;
+}
+
+/*Header*/
+header {
+    padding: var(--title-paddings-vertical)
+}
+
+h1 {
+    color: var(--title-color);
+    margin-bottom: 50px;
 }
