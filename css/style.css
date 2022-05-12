@@ -22,17 +22,19 @@ body {
     --cards-text-color: #ffffff;
     --title-color: #e53170;
     --mail-link-color: #65c6e5;
+    --cards-hight: 100px;
 }
 
 /*Header*/
 header {
     padding: 50px 0;
-    margin-bottom: 50px
+    margin-bottom: 10px
 }
 
 h1 {
     color: var(--title-color);
     margin-bottom: 50px;
+    font-size: 3rem;
 }
 
 /*main card box*/
@@ -56,27 +58,30 @@ h1 {
     margin: 20px;
     color: var(--cards-text-color);
     text-align: left;
+
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
-
-.card-img {
+.card-img>img {
     height: 100px;
     float: left;
     padding-right: 10px;
 }
 
+
+
+.card-txt {
+    padding: 10px;
+    height: 100px;
+    vertical-align: middle;
+    line-height: calc(100% / 3 + 20px);
+}
+
 .email {
     text-decoration: none;
     color: var(--mail-link-color);
-}
-
-.card-name,
-.role,
-.email {
-    padding: 5px 0;
     display: block;
 }
